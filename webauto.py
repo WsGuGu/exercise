@@ -1,3 +1,6 @@
+"""
+自动到虎扑网站
+"""
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
