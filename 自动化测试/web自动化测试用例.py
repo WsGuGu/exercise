@@ -6,12 +6,12 @@ import time
 '''
 rightpass = 0
 nopass = 0
-
+driverroute=r'D:\programming\programming_software\chromedriver\chromedriver.exe'#浏览器驱动所在路径
 
 def DLZC1():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     zh = wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input')
@@ -33,7 +33,7 @@ def DLZC1():
 def DLZC2():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/p/a').click()
@@ -49,7 +49,7 @@ def DLZC2():
 def DLZC3():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('//html/body/div[2]/p/a').click()
@@ -65,7 +65,7 @@ def DLZC3():
 def DLZC4():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/button').click()
@@ -82,7 +82,7 @@ def DLZC4():
 def DLZC5():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('1')
@@ -100,7 +100,7 @@ def DLZC5():
 def DLZC6():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('1')
@@ -120,7 +120,7 @@ def DLZC6():
 def DLZC7():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('13199044512')
@@ -140,7 +140,7 @@ def DLZC7():
 def DLZC8():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('13199044512')
@@ -159,7 +159,7 @@ def DLZC8():
 def DLZC9():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCLoginPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('test1@qq.com')
@@ -178,7 +178,7 @@ def DLZC9():
 def DLZC10():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     mobile = wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').get_attribute('placeholder')
@@ -200,7 +200,7 @@ def DLZC10():
 def DLZC11():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/div[2]/div/a').click()
@@ -216,7 +216,7 @@ def DLZC11():
 def DLZC12():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/div[2]/div/p[2]/a').click()
@@ -232,7 +232,7 @@ def DLZC12():
 def DLZC13():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/button').click()
@@ -249,7 +249,7 @@ def DLZC13():
 def DLZC14():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[3]/a').click()
@@ -266,7 +266,7 @@ def DLZC14():
 def DLZC15():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('1')
@@ -284,7 +284,7 @@ def DLZC15():
 def DLZC16():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('11111111111')
@@ -302,7 +302,7 @@ def DLZC16():
 def DLZC17():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('13199044512')
@@ -321,7 +321,7 @@ def DLZC17():
 def DLZC18():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('11111111111')
@@ -341,7 +341,7 @@ def DLZC18():
 def DLZC19():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('11111111111')
@@ -362,7 +362,7 @@ def DLZC19():
 def DLZC20():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('12344993321')
@@ -382,7 +382,7 @@ def DLZC20():
 def DLZC21():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('12344993321')
@@ -404,7 +404,7 @@ def DLZC21():
 def DLZC22():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCRegisterPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('12344993321')
@@ -429,7 +429,7 @@ def DLZC23():
 def DLZC24():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     mobile = wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').get_attribute('placeholder')
@@ -450,7 +450,7 @@ def DLZC24():
 def DLZC25():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/button').click()
@@ -468,7 +468,7 @@ def DLZC25():
 def DLZC26():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[3]/a').click()
@@ -486,7 +486,7 @@ def DLZC26():
 def DLZC27():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('1')
@@ -505,7 +505,7 @@ def DLZC27():
 def DLZC28():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('1')
@@ -524,7 +524,7 @@ def DLZC28():
 def DLZC29():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('13199044512')
@@ -543,7 +543,7 @@ def DLZC29():
 def DLZC30():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('12345678933')
@@ -562,7 +562,7 @@ def DLZC30():
 def DLZC31():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('419@asd.com')
@@ -581,7 +581,7 @@ def DLZC31():
 def DLZC32():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('test1@qq.com')
@@ -600,7 +600,7 @@ def DLZC32():
 def DLZC33():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('13199044512')
@@ -619,7 +619,7 @@ def DLZC33():
 def DLZC34():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('15198266364')
@@ -638,7 +638,7 @@ def DLZC34():
 def DLZC35():
     opt = webdriver.ChromeOptions()
     opt.add_argument('headless')
-    wd = webdriver.Chrome(r'D:\programming\programming_software\chromedriver\chromedriver.exe', options=opt)
+    wd = webdriver.Chrome(driverroute, options=opt)
     wd.implicitly_wait(10)
     wd.get('https://snail.zhuozhuo.io/?n=fastCat.fcFrontSnail.NewFront.NewFront.PCForgetPasswordPage')
     wd.find_element_by_xpath('/html/body/div[2]/form/div[2]/div[1]/input').send_keys('15198266364')
